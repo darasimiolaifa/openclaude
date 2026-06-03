@@ -30,6 +30,8 @@ const OPENAI_CONTEXT_WINDOWS: Record<string, number> = {
   'o3':                       200_000,
   'o3-mini':                  200_000,
   'o4-mini':                  200_000,
+  "qwen/qwen3-coder:free":    1_047_576,
+  "nvidia/nemotron-3-super-120b-a12b:free": 1_047_576,
 
   // DeepSeek (V3: 128k context per official docs)
   'deepseek-chat':            128_000,
@@ -51,6 +53,7 @@ const OPENAI_CONTEXT_WINDOWS: Record<string, number> = {
   // Google (via OpenRouter)
   'google/gemini-2.0-flash':1_048_576,
   'google/gemini-2.5-pro':  1_048_576,
+  'google/gemma-4-e4b':       131_072,
 
   // Google (native via CLAUDE_CODE_USE_GEMINI)
   'gemini-2.0-flash':       1_048_576,
@@ -74,6 +77,7 @@ const OPENAI_CONTEXT_WINDOWS: Record<string, number> = {
   'llama3.2:1b':              128_000,
   'qwen3:8b':                 128_000,
   'codestral':                 32_768,
+  "qwen2.5-coder-14b-instruct": 32_768,
 }
 
 /**
